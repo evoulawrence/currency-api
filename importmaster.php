@@ -1,10 +1,12 @@
 <?php
 require "bootstrap.php";
 use Src\Controllers\CountryCurrencyController;
+
 $tableName = "";
 if (isset($_POST["table"])) {
     $tableName = $_POST["table"];
 }
+
 $countryCurrency = new CountryCurrencyController($dbConnection, $tableName);
 if (isset($_POST["import"])) {
     $response = $countryCurrency->readRecords();
@@ -29,8 +31,7 @@ if (isset($_POST["import"])) {
                     <input type="radio" name="table" value="countries">Countries<br><br>
                     <input type="file" name="file" id="file" class="file" accept=".csv,.xls,.xlsx">
                     <div class="import">
-                        <button type="submit" id="submit" name="import"
-                            class="btn-submit">Import</button>
+                        <button type="submit" id="submit" name="import" class="btn-submit">Import</button>
                     </div>
                 </div>
             </form>
@@ -51,7 +52,6 @@ function validateFile() {
       return false;
     }
     return true;
-  }
-
+}
 </script>
 </html>
