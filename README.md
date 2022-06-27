@@ -15,17 +15,17 @@ To Import csv Files To Your Database
 
 AGPAY API
 ---------------------------------------------------------------
-* http://localhost/agpay/[tableName]/?limit=[limitValue]&offset=[offsetValue]&search=[searchValue]
+* http://localhost/agpay/{tableName}/?limit={limitValue}&offset={offsetValue}&search={searchValue}
 * Description
-* [tableName] as defined on the database (currencies or countries).
-* [limitValue] number of records per page
-* [offsetValue] Next page
-* [searchValue] searches official_name and common_name of countries and currencies; can be empty.
+* {tableName} as defined on the database (currencies or countries).
+* {limitValue} number of records per page
+* {offsetValue} Next page
+* {searchValue} searches official_name and common_name of countries and currencies; can be empty.
 * LIMIT and OFFSET parameters are always required.
 
-* To get joint currencies and countries tables as one output: http://localhost/agpay/?limit=[limitValue]&offset=[offsetValue]&search=[searchValue]
-* To get countries table ONLY: http://localhost/agpay/countries/?limit=[limitValue]&offset=[offsetValue]&search=[searchValue]
-* To get currencies table ONLY: http://localhost/agpay/currencies/?limit=[limitValue]&offset=[offsetValue]&search=[searchValue]
+* To get joint currencies and countries tables as one output: http://localhost/agpay/?limit={limitValue}&offset={offsetValue}&search={searchValue}
+* To get countries table ONLY: http://localhost/agpay/countries/?limit={limitValue}&offset={offsetValue}&search={searchValue}
+* To get currencies table ONLY: http://localhost/agpay/currencies/?limit={limitValue}&offset={offsetValue}&search={searchValue}
 
 Testing the API
 ---------------------------------------------------------------
