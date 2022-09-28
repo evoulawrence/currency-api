@@ -1,4 +1,4 @@
-AGPAY countries and currencies API.
+countries and currencies API.
 ----------------------------------------------
 
 To Setup Your Local Database
